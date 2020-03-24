@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+
+.NavBar {
+  font-family: 'Press Start 2P', cursive;
+
+  #navLinks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h1, h2, h3, footer, .btn{
+    background-color: black;
+    color: limegreen;
+    padding: .75em;
+    border: 5px double limegreen;
+    border-radius: 2em;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+}
+
+}

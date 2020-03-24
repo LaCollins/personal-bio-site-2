@@ -3,10 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 import './App.scss';
 
+import NavBar from '../components/shared/NavBar/NavBar';
 import Bio from '../components/pages/Bio/Bio';
 import Projects from '../components/pages/Projects/Projects';
 import Technologies from '../components/pages/Technologies/Technologies';
@@ -16,22 +16,7 @@ class App extends React.Component {
     return (
       <div className="App">
        <Router>
-         <div>
-           <nav>
-             <ul>
-               <li>
-                 <Link to="/">Bio</Link>
-               </li>
-               <li>
-                 <Link to="/projects">Projects</Link>
-               </li>
-               <li>
-                 <Link to="/technologies">Technologies</Link>
-               </li>
-             </ul>
-           </nav>
-         </div>
-
+       <NavBar />
          <Switch>
             <Route path="/" exact component={Bio} />
             <Route path="/projects" exact component={Projects} />

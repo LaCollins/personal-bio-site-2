@@ -9,14 +9,36 @@
     justify-content: space-around;
   }
 
-  h1, h2, h3, footer, .btn{
-    background-color: black;
-    color: limegreen;
-    padding: .75em;
+  .navbar {
+    margin-top: 10px;
+  }
+
+  #myName {
     border: 5px double limegreen;
     border-radius: 2em;
     font-family: 'Press Start 2P', cursive;
     box-shadow: 5px 5px 10px rgb(45, 112, 48);
+  }
+
+  .btn, #myName {
+    background-color: black;
+    color: limegreen;
+    padding: .75em;
+    // border: 5px double limegreen;
+    border-radius: 2em;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+    margin: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+      flex-direction: column;
+      align-content: center;
+      margin: 0 3em 0 0em;
+      justify-content: center;
+      text-align: justify;
+  }
 }
 
 }

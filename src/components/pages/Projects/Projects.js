@@ -28,6 +28,9 @@ class Projects extends React.Component {
     <div className="Projects container">
       <div className="projectContents">
         <h2>Projects</h2>
+        <div className="projectInfo">
+          <h4>A few of the projects I have worked on.</h4>
+        </div>
         <Carousel>
         {this.state.projects.map((project) => (
           <Carousel.Item>

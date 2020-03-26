@@ -9,6 +9,19 @@
     margin: 1em;
     box-shadow: 5px 5px 10px rgb(45, 112, 48);
   
+    .myInfo {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      /* margin: 5em; */
+      align-items: center;
+    }
+
+    .myInfo p::first-letter {
+      font-size: 120%;
+      font-family: 'Press Start 2P', cursive;
+    }
+
     h1 {
       font-family: 'Press Start 2P', cursive;
       color: limegreen;

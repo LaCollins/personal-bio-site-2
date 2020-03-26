@@ -15,6 +15,11 @@
       margin: 10px;
     }
 
+    .projectInfo {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 20px;
+    }
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 80px;
@@ -74,7 +79,7 @@
       color: yellow;
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 700px) {
 
       .carousel .carousel-inner {
         object-fit: inherit;

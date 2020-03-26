@@ -1,0 +1,45 @@
+.Contact {
+  .contactContents {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgb(45, 112, 48);
+    border-radius: 2em;
+    padding: 1em;
+    border: limegreen dotted 2px;
+    padding-left: 2em;
+    margin: 1em;
+    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+
+    .contactLinks {
+      justify-content: space-around;
+      margin: 1em;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .contactInfo {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 20px;
+    }
+
+    .email, .fa-linkedin {
+      font-family: 'Share Tech', sans-serif;
+      font-size: 2em;
+    }
+
+    a:link {
+      color: rgb(0, 255, 115);
+    }
+    
+    a:visited {
+      color: rgb(0, 255, 115);
+    }
+    
+    a:hover {
+      color: yellowgreen;
+    }
+    
+    a:active {
+      color: yellow;
+    }
+  }
+}

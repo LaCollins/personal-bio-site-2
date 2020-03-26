@@ -1,0 +1,25 @@
+.Technologies {
+  .techContents {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgb(45, 112, 48);
+    border-radius: 2em;
+    padding: 1em;
+    border: limegreen dotted 2px;
+    padding-left: 2em;
+    margin: 1em;
+    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+
+    .fa-sass, .fa-aws{
+      font-size: 28px;
+    }
+
+    .fa-npm{
+      font-size: 32px;;
+    }
+
+    .techInfo {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 20px;
+    }
+  }
+}

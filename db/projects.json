@@ -1,0 +1,47 @@
+{
+  "project1": {
+    "title": "Snakelings",
+    "screenshot": "https://github.com/LaCollins/snakelings/blob/master/screenshots/mainView.PNG?raw=true",
+    "description": "This project was my front-end capstone project. Snakelings is a Snake Identification and Tracking Resource. The concept is that this app will help users identify snake species that they may come across and allow them to report the sighting.",
+    "technologiesUsed": "HTML5, SCSS, Javascript, Bootstrap: free and open-source CSS framework, React Bootstrap, React, FontAwesome, React AWS S3, Webpack, Firebase",
+    "available": true,
+    "url": "https://snakelings.com/",
+    "githubUrl": "https://github.com/LaCollins/snakelings"
+    },
+  "project2": {
+    "title": "Squidterest",
+    "screenshot": "https://raw.githubusercontent.com/LaCollins/pinterest/master/screenshots/boardvew.PNG",
+    "description": "Squidterest is a spinoff of Pinterest. Users can create new profiles using Google Authentication, boards, and pins. Users can also change which board a pin belongs to and delete the pins or boards as desired.",
+    "technologiesUsed": "HTML5, CSS, Javascript, Bootstrap: free and open-source CSS framework, jQuery, ES6 modules, Webpack, Firebase",
+    "available": true,
+    "url": "https://squidterest-dfea2.firebaseapp.com/",
+    "githubUrl": "https://github.com/LaCollins/pinterest"
+    },
+  "project3": {
+    "title": "Jurassic World",
+    "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-jurassic-world/master/images/readmeImg/dinoLogin.PNG",
+    "description": "Welcome to the world of Jurassic Park! When the user initially visits the page, they will see all the different components that run the theme park. In order to keep track of the dinosaurs, staff, rides, vendors, and equipment, the user will need to log in. However, be careful! Because there is a Chaos Monkey that wreaks havoc at the same time every day on the equipment, staff, and rides.",
+    "technologiesUsed": "HTML5, CSS, Javascript, Bootstrap: free and open-source CSS framework, jQuery, ES6 modules, Webpack, Firebase, Cron",
+    "available": true,
+    "url": "https://jurassic-world-a9907.firebaseapp.com/",
+    "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-jurassic-world"
+  },
+  "project4": {
+    "title": "Le Baguette",
+    "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-michelin-restaurant/master/screenshots2/homepage.PNG",
+    "description": "Welcome to La Baguette, our very own thirty-seven star Michellin restaurant! This site can be used to view the menu, ingredients, staff members, reports, seating available at the restaurant, and standing reservations. As an employee, you have the ability to sign in and make modifications to the menu items, the ingredients, staff members, and reservations. Additionally, you will also have the ability to look at reports.",
+    "technologiesUsed": "HTML5, CSS, Javascript, Bootstrap: free and open-source CSS framework, jQuery, ES6 modules, Webpack, Firebase, Cron",
+    "available": true,
+    "url": "https://labaguette-932fa.web.app/",
+    "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-michelin-restaurant"
+  },
+  "project5": {
+    "title": "Tamagotchi",
+    "screenshot": "https://raw.githubusercontent.com/LaCollins/tomagotchi/master/screenshots/mainview.PNG",
+    "description": "This is a Tamagotchi pet. You can use the buttons to feed, play with, fight, or let your pet sleep. BEWARE! If Fluffy's happiness hits 0 he dies!",
+    "technologiesUsed": "HTML5, CSS, Javascript, Bootstrap: free and open-source CSS framework, jQuery, ES6 modules, Webpack, Firebase",
+    "available": true,
+    "url": "https://tamagotchi-7ea85.firebaseapp.com/",
+    "githubUrl": "https://github.com/LaCollins/tomagotchi"
+    }
+}

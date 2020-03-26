@@ -12,6 +12,7 @@
     .carouselInfo {
       background-color: rgba(0, 0, 0, 0.70);
       border-radius: 1em;
+      margin: 10px;
     }
 
     .carousel-control-prev-icon,
@@ -55,6 +56,38 @@
       max-width: 100%;
       padding: 5px;
       margin: 0;
+    }
+
+    a:link {
+      color: rgb(0, 255, 115);
+    }
+    
+    a:visited {
+      color: rgb(0, 255, 115);
+    }
+    
+    a:hover {
+      color: yellowgreen;
+    }
+    
+    a:active {
+      color: yellow;
+    }
+
+    @media only screen and (max-width: 800px) {
+
+      .carousel .carousel-inner {
+        object-fit: inherit;
+        overflow: inherit;
+        align-content: center;
+        height: 50em;
+      }
+      .carousel-caption {
+        top: 85%;
+        height: 20em;
+        width: 70%;
+      }
+      
     }
   }
 }

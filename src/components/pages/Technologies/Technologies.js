@@ -32,7 +32,7 @@ class Technologies extends React.Component {
             </div>
             <div className="col-sm-3">
               <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-react" alt="React"></i> React
+              <i className="fab fa-react" alt="React"></i> React
               </a>
             </div>
             <div className="col-sm-3">

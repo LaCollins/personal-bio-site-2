@@ -39,10 +39,10 @@ class Projects extends React.Component {
               <Carousel.Caption>
                 <div className="carouselInfo">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="row justify-content-between mb-4">
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="ml-5">View Live</a>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="mr-5"><i className="fab fa-github" alt="Github"></i> Github</a>
+                <p className="m-2">{project.description}</p>
+                <div className="row justify-content-around">
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">View Live</a>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="mb-2"><i className="fab fa-github" alt="Github"></i> Github</a>
                 </div>
                 </div>
               </Carousel.Caption>

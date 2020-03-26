@@ -18,3 +18,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: limegreen;
+}
+
+@media only screen and (max-width: 650px) {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+a:link {
+  color: rgb(45, 112, 48);
+}
+
+a:visited {
+  color: rgb(0, 255, 115);
+}
+
+a:hover {
+  color: yellowgreen;
+}
+
+a:active {
+  color: yellow;
+}

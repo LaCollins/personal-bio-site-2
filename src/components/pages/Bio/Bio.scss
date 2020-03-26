@@ -13,18 +13,11 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      /* margin: 5em; */
-      align-items: center;
     }
 
     .myInfo p::first-letter {
       font-size: 120%;
       font-family: 'Press Start 2P', cursive;
-    }
-
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      color: limegreen;
     }
 
     .bioText {
@@ -45,18 +38,16 @@
       }
     }
   
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 800px) {
       .imgContainer {
         overflow: hidden;
         height: 20em;
         width: 20em;
         border-radius: 50em;
         margin-bottom: 1em;
-  
-        img {
-          width: inherit;
-        }
+        margin: auto;
       }
+      
     }
   }
 }

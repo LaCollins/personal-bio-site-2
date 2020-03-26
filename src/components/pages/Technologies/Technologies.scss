@@ -8,10 +8,18 @@
     padding-left: 2em;
     margin: 1em;
     box-shadow: 5px 5px 10px rgb(45, 112, 48);
-  
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      color: limegreen;
+
+    .fa-sass, .fa-aws{
+      font-size: 28px;
+    }
+
+    .fa-npm{
+      font-size: 32px;;
+    }
+
+    .techInfo {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 20px;
     }
   }
 }

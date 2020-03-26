@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
-
-
 .NavBar {
   font-family: 'Press Start 2P', cursive;
 
@@ -10,7 +7,7 @@
   }
 
   .navbar {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   #myName {
@@ -18,6 +15,11 @@
     border-radius: 2em;
     font-family: 'Press Start 2P', cursive;
     box-shadow: 5px 5px 10px rgb(45, 112, 48);
+  }
+
+  .subtitle {
+    font-family: 'Share Tech', sans-serif;
+    color: rgb(45, 112, 48);
   }
 
   .btn, #myName {
@@ -28,7 +30,17 @@
     border-radius: 2em;
     font-family: 'Press Start 2P', cursive;
     box-shadow: 5px 5px 10px rgb(45, 112, 48);
-    margin: 5px;
+    margin: 3px;
+}
+
+.btn-dark:hover {
+  color: yellowgreen;
+  box-shadow: 5px 5px 10px yellowgreen;
+}
+
+.btn-dark:active, .btn-dark:active:focus {
+  color: rgb(0, 0, 0);
+  background-color: limegreen;
 }
 
 @media only screen and (max-width: 650px) {

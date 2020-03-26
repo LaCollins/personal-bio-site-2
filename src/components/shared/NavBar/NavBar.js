@@ -7,7 +7,10 @@ class NavBar extends React.Component {
     return (
       <div className="NavBar">
         <nav className="container-fluid navbar">
-          <div className="text-center" id="myName">Laura E. Collins</div>
+          <div>
+            <div className="text-center" id="myName">Laura E. Collins</div>
+            <div className="subtitle text-center">full-stack web developer</div>
+          </div>
           <div className="row wrap" id="navLinks">
             <Link to="/" type="button" className="btn btn-dark" id="navToBio">Biography</Link>
             <Link to="/technologies" type="button" className="btn btn-dark" id="navToTech">Technologies</Link>

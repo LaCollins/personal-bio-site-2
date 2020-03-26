@@ -1,0 +1,49 @@
+.Bio {
+  .bioContents {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgb(45, 112, 48);
+    border-radius: 2em;
+    padding: 1em;
+    border: limegreen dotted 2px;
+    padding-left: 2em;
+    margin: 1em;
+    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+  
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      color: limegreen;
+    }
+
+    .bioText {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 18px;
+    }
+  
+    .imgContainer {
+      overflow: hidden;
+      height: 30em;
+      width: 30em;
+      border-radius: 50em;
+      border: 5px double limegreen;
+      margin: auto;
+  
+      img {
+        width: inherit;
+      }
+    }
+  
+    @media only screen and (max-width: 650px) {
+      .imgContainer {
+        overflow: hidden;
+        height: 20em;
+        width: 20em;
+        border-radius: 50em;
+        margin-bottom: 1em;
+  
+        img {
+          width: inherit;
+        }
+      }
+    }
+  }
+}

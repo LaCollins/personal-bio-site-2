@@ -37,7 +37,7 @@ class Technologies extends React.Component {
             </div>
             <div className="col-sm-3">
               <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-aws" alt="Amazon Web Services"></i> S3 Bucket
+              <i class="fab fa-aws" alt="Amazon Web Services"></i>
               </a>
             </div>
             <div className="col-sm-3">
@@ -48,6 +48,16 @@ class Technologies extends React.Component {
             <div className="col-sm-3">
               <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-npm" alt="NPM"></i>
+              </a>
+            </div>
+            <div className="col-sm-3">
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer">
+              C#
+              </a>
+            </div>
+            <div className="col-sm-3">
+              <a href="https://dotnet.microsoft.com/" target="_blank" rel="noopener noreferrer">
+              .NET
               </a>
             </div>
             <div className="col-sm-3">

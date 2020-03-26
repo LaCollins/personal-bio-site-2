@@ -4,6 +4,7 @@ import './styles/index.scss';
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/js/all';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -37,17 +37,17 @@ class Technologies extends React.Component {
             </div>
             <div className="col-sm-3">
               <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-aws" alt="Amazon Web Services"></i>
+              <i className="fab fa-aws" alt="Amazon Web Services"></i>
               </a>
             </div>
             <div className="col-sm-3">
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github" alt="Github"></i> Github
+              <i className="fab fa-github" alt="Github"></i> Github
               </a>
             </div>
             <div className="col-sm-3">
               <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-npm" alt="NPM"></i>
+              <i className="fab fa-npm" alt="NPM"></i>
               </a>
             </div>
             <div className="col-sm-3">

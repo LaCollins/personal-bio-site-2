@@ -6,7 +6,8 @@ class Contact extends React.Component {
     return (
       <div className="Contact container">
         <div className="contactContents">
-          <h2>Contact</h2>
+        <h2 className="title">C:\LC> Contact<span></span></h2>
+        <h2 className="title2">Contact</h2>
           <div className="contactInfo">
             <h4>A few different places you can get in touch with me.</h4>
             <div className="contactLinks">

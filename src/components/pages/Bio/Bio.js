@@ -1,16 +1,30 @@
 import './Bio.scss';
 import React from 'react';
 import MyImage from './images/myphoto.jpg';
+import MyImage2 from './images/myphoto2.jpg';
 
 class Bio extends React.Component {
+  state = {
+    imageClicked: false,
+  }
+
+  swapImage1 = () => {
+    this.setState({ imageClicked: true });
+  }
+
+  swapImage2 = () => {
+    this.setState({ imageClicked: false });
+  }
+
   render() {
     return (
     <div className="Bio container">
       <div className="bioContents">
-        <h2>About Me</h2>
+        <h2 className="title">C:\LC> About Me<span></span></h2>
+        <h2 className="title2">About Me</h2>
         <div className="row d-flex myInfo m-0 col-m-6">
           <div className="imgContainer text-center">
-            <img src={MyImage} className="MyPhoto" alt="Me" />
+            { this.state.imageClicked ? (<img src={MyImage2} className="MyPhoto" alt="Me" onClick={this.swapImage2} />) : (<img src={MyImage} className="MyPhoto" alt="Me" onClick={this.swapImage1} />) }
           </div>
           <div className="col">
             <div className="m-auto bioText text-justify">

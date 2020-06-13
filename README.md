@@ -5,6 +5,14 @@ This site is a personal bio site for myself. Learn all about me.
 
 To see the original version of this site check out [Personal Bio Site Version 1](https://github.com/LaCollins/personal-bio-site) on GitHub.
 
+## Tools And Technologies
+* React
+* HTML5
+* JavaScript
+* ReactBootstrap
+* CSS/SCSS
+* Firebase
+
 
 ## Screenshots
 ![Main view of page](https://github.com/LaCollins/personal-bio-site-2/raw/master/screenshots/mainView.PNG)

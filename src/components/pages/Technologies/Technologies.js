@@ -6,7 +6,8 @@ class Technologies extends React.Component {
     return (
     <div className="Technologies container">
       <div className="techContents">
-        <h2>Tools &amp; Technologies</h2>
+      <h2 className="title">C:\LC> Tools &amp; Technologies<span></span></h2>
+      <h2 className="title2">Tools &amp; Technologies</h2>
         <div className="techInfo">
           <h4>A short overview of the tools and technologies I have experience using.</h4>
           <div className="row" id="techIcons">

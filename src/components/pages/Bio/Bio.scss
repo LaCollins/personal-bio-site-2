@@ -37,6 +37,38 @@
         width: inherit;
       }
     }
+
+    @media only screen and (min-width: 800px) {
+      .title2 {
+        display: none;  
+      }
+
+      .title {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+          typing 3.5s steps(40, end);
+      }
+      span {
+        overflow: hidden;
+        border-right: .15em solid limegreen;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+          blink-caret .75s step-end infinite;
+      }
+  
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+  
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: limegreen; }
+      }
+    }
   
     @media only screen and (max-width: 800px) {
       .imgContainer {
@@ -46,6 +78,14 @@
         border-radius: 50em;
         margin-bottom: 1em;
         margin: auto;
+      }
+
+      .title2 {
+        display: block;
+      }
+      
+      .title {
+        display: none;
       }
       
     }

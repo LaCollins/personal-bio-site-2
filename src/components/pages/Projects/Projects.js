@@ -27,7 +27,8 @@ class Projects extends React.Component {
     return (
     <div className="Projects container">
       <div className="projectContents">
-        <h2>Projects</h2>
+        <h2 className="title">C:\LC> Projects<span></span></h2>
+        <h2 className="title2">Projects</h2>
         <div className="projectInfo">
           <h4>A few of the projects I have worked on.</h4>
         </div>
@@ -42,7 +43,7 @@ class Projects extends React.Component {
               <Carousel.Caption>
                 <div className="carouselInfo">
                 <h3>{project.title}</h3>
-                <p className="m-2">{project.description}</p>
+                <p className="m-2 description">{project.description}</p>
                 <div className="row justify-content-around">
                   <a href={project.url} target="_blank" rel="noopener noreferrer">View Live</a>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="mb-2"><i className="fab fa-github" alt="Github"></i> Github</a>

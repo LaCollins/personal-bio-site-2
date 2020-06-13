@@ -83,16 +83,63 @@
 
       .carousel .carousel-inner {
         object-fit: inherit;
-        overflow: inherit;
-        align-content: center;
-        height: 50em;
+        overflow: hidden;
+        margin-bottom: auto;
+        height: 20em;
       }
       .carousel-caption {
-        top: 85%;
-        height: 20em;
+        top: 80%;
         width: 70%;
+
+        .description {
+          display: none;
+        }
       }
       
     }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .title2 {
+      display: none;  
+    }
+
+    .title {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation:
+        typing 3.5s steps(40, end);
+    }
+    span {
+      overflow: hidden;
+      border-right: .15em solid limegreen;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation:
+        blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: limegreen; }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .title2 {
+      display: block;
+    }
+    
+    .title {
+      display: none;
+    }
+    
   }
 }

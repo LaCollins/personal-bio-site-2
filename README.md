@@ -1,12 +1,17 @@
-# Personal Bio Site
+# Personal Bio Site Version 2.0
 
 ## Description
 This site is a personal bio site for myself. Learn all about me.
 
+To see the original version of this site check out [Personal Bio Site Version 1](https://github.com/LaCollins/personal-bio-site) on GitHub.
+
+
 ## Screenshots
-![Main view of page](https://raw.githubusercontent.com/LaCollins/personal-bio-site/master/screenshots/mainview.PNG)
-![View of Tools and Technologies](https://raw.githubusercontent.com/LaCollins/personal-bio-site/master/screenshots/toolsandtech.PNG)
-![View of my projects](https://raw.githubusercontent.com/LaCollins/personal-bio-site/master/screenshots/projects.PNG)
+![Main view of page](https://github.com/LaCollins/personal-bio-site-2/raw/master/screenshots/mainView.PNG)
+![View of Tools and Technologies](https://github.com/LaCollins/personal-bio-site-2/raw/master/screenshots/Tools.PNG)
+![View of my projects](https://github.com/LaCollins/personal-bio-site-2/raw/master/screenshots/Projects.PNG)
+![View of my projects](https://github.com/LaCollins/personal-bio-site-2/raw/master/screenshots/Contact.PNG)
+
 
 ## How to run
 * Clone down this project

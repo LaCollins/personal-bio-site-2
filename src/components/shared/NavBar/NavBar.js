@@ -1,5 +1,6 @@
 import './NavBar.scss';
 import React from 'react';
+import { Button, Header } from 'arwes';
 import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
@@ -8,14 +9,16 @@ class NavBar extends React.Component {
       <div className="NavBar">
         <nav className="container-fluid navbar">
           <div>
-            <div className="text-center" id="myName">Laura E. Collins</div>
+            <Header animate>
+            <h1 style={{ margin: 0 }}>Laura E. Collins</h1>
+            </Header>
             <div className="subtitle text-center">full-stack web developer</div>
           </div>
           <div className="row wrap" id="navLinks">
-            <Link to="/" type="button" className="btn btn-dark" id="navToBio">Biography</Link>
-            <Link to="/technologies" type="button" className="btn btn-dark" id="navToTech">Technologies</Link>
-            <Link to="/projects" type="button" className="btn btn-dark" id="navToProjects">Projects</Link>
-            <Link to="/contact" type="button" className="btn btn-dark" id="navToProjects">Contact</Link>
+            <Link to="/" id="navToBio"><Button>Biography</Button></Link>
+            <Link to="/technologies" id="navToTech"><Button>Technologies</Button></Link>
+            <Link to="/projects" id="navToProjects"><Button>Projects</Button></Link>
+            <Link to="/contact" id="navToProjects"><Button>Contact</Button></Link>
           </div>
         </nav>
       </div>

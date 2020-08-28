@@ -25,7 +25,7 @@ class Bio extends React.Component {
   render() {
     return (
     <div className="Bio" style={{ display: 'inline-block', padding: '30px' }}>
-      <Frame animate level={3} corners={8} layer='primary' show={this.state.show} timeout={1000} appear={true}>
+      <Frame animate level={3} corners={8} layer='primary' show={this.state.show} timeout={1000}>
       <div className="bioContents">
         <Heading animate>
           <h2 className="title">About Me</h2>

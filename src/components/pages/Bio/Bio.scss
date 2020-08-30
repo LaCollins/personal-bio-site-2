@@ -1,13 +1,16 @@
 .Bio {
+  
+  width: 75%;
+
   .bioContents {
-    background-color: rgba(0, 0, 0, 0.60);
-    color: rgb(45, 112, 48);
+    // background-color: rgba(0, 0, 0, 0.60);
+    // color: rgb(45, 112, 48);
     border-radius: 2em;
     padding: 1em;
-    border: limegreen dotted 2px;
+    // border: limegreen dotted 2px;
     padding-left: 2em;
     margin: 1em;
-    box-shadow: 5px 5px 10px rgb(45, 112, 48);
+    // box-shadow: 5px 5px 10px rgb(45, 112, 48);
   
     .myInfo {
       display: flex;
@@ -17,7 +20,7 @@
 
     .myInfo p::first-letter {
       font-size: 120%;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Electrolize', sans-serif;
     }
 
     .bioText {
@@ -30,7 +33,7 @@
       height: 30em;
       width: 30em;
       border-radius: 50em;
-      border: 5px double limegreen;
+      border: 5px double #26dafd;
       margin: auto;
   
       img {
@@ -50,24 +53,24 @@
         animation:
           typing 3.5s steps(40, end);
       }
-      span {
-        overflow: hidden;
-        border-right: .15em solid limegreen;
-        white-space: nowrap;
-        margin: 0 auto;
-        animation:
-          blink-caret .75s step-end infinite;
-      }
+      // span {
+      //   overflow: hidden;
+      //   border-right: .15em solid limegreen;
+      //   white-space: nowrap;
+      //   margin: 0 auto;
+      //   animation:
+      //     blink-caret .75s step-end infinite;
+      // }
   
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
+      // @keyframes typing {
+      //   from { width: 0 }
+      //   to { width: 100% }
+      // }
   
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: limegreen; }
-      }
+      // @keyframes blink-caret {
+      //   from, to { border-color: transparent }
+      //   50% { border-color: limegreen; }
+      // }
     }
   
     @media only screen and (max-width: 800px) {
@@ -80,13 +83,13 @@
         margin: auto;
       }
 
-      .title2 {
-        display: block;
-      }
+      // .title2 {
+      //   display: block;
+      // }
       
-      .title {
-        display: none;
-      }
+      // .title {
+      //   display: none;
+      // }
       
     }
   }

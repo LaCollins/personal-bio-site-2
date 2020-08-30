@@ -1,23 +1,33 @@
 import './NavBar.scss';
 import React from 'react';
+import {
+  Button, Header, Heading, Line,
+} from 'arwes';
 import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar">
+        <Header animate show={this.props.anim.entered}>
         <nav className="container-fluid navbar">
           <div>
-            <div className="text-center" id="myName">Laura E. Collins</div>
-            <div className="subtitle text-center">full-stack web developer</div>
+              <Heading animate show={this.props.anim.entered}>
+                <h1>Laura E. Collins</h1>
+              </Heading>
+              <Line animate show={this.props.anim.entered}/>
+              <Heading animate show={this.props.anim.entered}>
+                <h5 className="subtitle text-center">full-stack web developer</h5>
+              </Heading>
           </div>
-          <div className="row wrap" id="navLinks">
-            <Link to="/" type="button" className="btn btn-dark" id="navToBio">Biography</Link>
-            <Link to="/technologies" type="button" className="btn btn-dark" id="navToTech">Technologies</Link>
-            <Link to="/projects" type="button" className="btn btn-dark" id="navToProjects">Projects</Link>
-            <Link to="/contact" type="button" className="btn btn-dark" id="navToProjects">Contact</Link>
+          <div className="row wrap mr-3" id="navLinks">
+            <Link to="/" id="navToBio"><Button animate show={this.props.anim.entered}>Biography</Button></Link>
+            <Link to="/technologies" id="navToTech"><Button animate show={this.props.anim.entered}>Technologies</Button></Link>
+            <Link to="/projects" id="navToProjects"><Button animate show={this.props.anim.entered}>Projects</Button></Link>
+            <Link to="/contact" id="navToProjects"><Button animate show={this.props.anim.entered}>Contact</Button></Link>
           </div>
         </nav>
+        </Header>
       </div>
     );
   }

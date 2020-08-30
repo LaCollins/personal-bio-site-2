@@ -9,22 +9,22 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar">
-        <Header animate>
+        <Header animate show={this.props.anim.entered}>
         <nav className="container-fluid navbar">
           <div>
-              <Heading animate>
+              <Heading animate show={this.props.anim.entered}>
                 <h1>Laura E. Collins</h1>
               </Heading>
-              <Line animate />
-              <Heading animate>
+              <Line animate show={this.props.anim.entered}/>
+              <Heading animate show={this.props.anim.entered}>
                 <h5 className="subtitle text-center">full-stack web developer</h5>
               </Heading>
           </div>
           <div className="row wrap mr-3" id="navLinks">
-            <Link to="/" id="navToBio"><Button animate>Biography</Button></Link>
-            <Link to="/technologies" id="navToTech"><Button animate>Technologies</Button></Link>
-            <Link to="/projects" id="navToProjects"><Button animate>Projects</Button></Link>
-            <Link to="/contact" id="navToProjects"><Button animate>Contact</Button></Link>
+            <Link to="/" id="navToBio"><Button animate show={this.props.anim.entered}>Biography</Button></Link>
+            <Link to="/technologies" id="navToTech"><Button animate show={this.props.anim.entered}>Technologies</Button></Link>
+            <Link to="/projects" id="navToProjects"><Button animate show={this.props.anim.entered}>Projects</Button></Link>
+            <Link to="/contact" id="navToProjects"><Button animate show={this.props.anim.entered}>Contact</Button></Link>
           </div>
         </nav>
         </Header>

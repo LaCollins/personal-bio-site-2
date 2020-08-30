@@ -46,25 +46,27 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={createTheme()}>
         <SoundsProvider sounds={createSounds(mySounds)}>
-          <Arwes resources={this.resources} animate pattern={glow} stype={{ padding: 20 }}>
-            <div className="App">
-            <Router>
-            <NavBar />
-              <Switch>
-                <Puffs>
-                  <Route path="/" exact component={Bio} />
-                  <Route path="/projects" exact component={Projects} />
-                  <Route path="/technologies" exact component={Technologies} />
-                  <Route path="/contact" exact component={Contact} />
-                </Puffs>
-              </Switch>
-            </Router>
+          <Arwes resources={this.resources} animate show pattern={glow} stype={{ padding: 20 }}>
+            {(anim) => (
+              <div className="App">
+                <Router>
+                <NavBar anim={anim} />
+                  <Switch>
+                    <Puffs>
+            <Route path="/" exact render={(props) => <Bio {...props} anim={anim}/>}/>
+                      <Route path="/projects" exact component={Projects} />
+                      <Route path="/technologies" exact component={Technologies} />
+                      <Route path="/contact" exact component={Contact} />
+                    </Puffs>
+                  </Switch>
+                </Router>
             <div className="footerContents d-flex row justify-content-between">
-              <Line animate />
+              <Line animate show={anim.entered}/>
               <div>© Laura E. Collins</div>
-              <Link href="https://github.com/arwesjs/arwes" alt="Arwes theme">Arwes API by Romel Pérez</Link>
+              <Link animate show={anim.entered} href="https://github.com/arwesjs/arwes" alt="Arwes theme">Arwes API by Romel Pérez</Link>
             </div>
             </div>
+            )}
           </Arwes>
         </SoundsProvider>
       </ThemeProvider>

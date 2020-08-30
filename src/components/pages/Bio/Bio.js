@@ -1,13 +1,14 @@
 import './Bio.scss';
 import React from 'react';
-import { Frame, Row, Heading, Appear } from 'arwes';
+import {
+  Frame, Row, Heading, Appear,
+} from 'arwes';
 import MyImage from './images/myphoto.jpg';
 import MyImage2 from './images/myphoto2.jpg';
 
 class Bio extends React.Component {
   state = {
     imageClicked: false,
-    show: false,
   }
 
   swapImage1 = () => {
@@ -18,20 +19,16 @@ class Bio extends React.Component {
     this.setState({ imageClicked: false });
   }
 
-  componentDidMount() {
-    this.setState({ show: true });
-  }
-
   render() {
     return (
     <div className="Bio" style={{ display: 'inline-block', padding: '30px' }}>
-      <Frame animate level={3} corners={8} layer='primary' show={this.state.show} timeout={1000}>
+      <Frame animate level={3} corners={8} layer='primary' show={this.props.anim.entered}>
       <div className="bioContents">
-        <Heading animate>
+        <Heading animate show={this.props.anim.entered}>
           <h2 className="title">About Me</h2>
         </Heading>
         <Row className="row d-flex myInfo m-0 col-m-6">
-          <Appear animate show={this.state.show}>
+          <Appear show={this.props.anim.entered}>
             <div className="imgContainer text-center">
               { this.state.imageClicked ? (<img src={MyImage2} className="MyPhoto" alt="Me" onClick={this.swapImage2} />) : (<img src={MyImage} className="MyPhoto" alt="Me" onClick={this.swapImage1} />) }
             </div>

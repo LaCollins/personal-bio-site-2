@@ -42,6 +42,37 @@ class App extends React.Component {
     pattern: glow,
   }
 
+  state = {
+    showBio: false,
+    showProj: false,
+    showTech: false,
+    showContact: false,
+  }
+
+  setShowBio = () => {
+    this.setState({
+      showBio: true, showProj: false, showTech: false, showContact: false,
+    });
+  }
+
+  setShowProj = () => {
+    this.setState({
+      showProj: true, showBio: false, showTech: false, showContact: false,
+    });
+  }
+
+  setShowTech = () => {
+    this.setState({
+      showTech: true, showProj: false, showBio: false, showContact: false,
+    });
+  }
+
+  setShowContact = () => {
+    this.setState({
+      showContact: true, showProj: false, showTech: false, showBio: false,
+    });
+  }
+
   render() {
     return (
       <ThemeProvider theme={createTheme()}>
@@ -50,13 +81,13 @@ class App extends React.Component {
             {(anim) => (
               <div className="App">
                 <Router>
-                <NavBar anim={anim} />
+                <NavBar anim={anim} setShowBio={this.setShowBio} setShowProj={this.setShowProj} setShowTech={this.setShowTech} setShowContact={this.setShowContact} />
                   <Switch>
                     <Puffs>
-            <Route path="/" exact render={(props) => <Bio {...props} anim={anim}/>}/>
-                      <Route path="/projects" exact component={Projects} />
-                      <Route path="/technologies" exact component={Technologies} />
-                      <Route path="/contact" exact component={Contact} />
+                      <Route path="/" exact render={(props) => <Bio {...props} anim={anim} />}/>
+                      <Route path="/projects" exact render={(props) => <Projects {...props} anim={anim}/>} />
+                      <Route path="/technologies" exact render={(props) => <Technologies {...props} anim={anim}/>} />
+                      <Route path="/contact" exact render={(props) => <Contact {...props} anim={anim}/>} />
                     </Puffs>
                   </Switch>
                 </Router>

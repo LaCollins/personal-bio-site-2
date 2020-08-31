@@ -21,9 +21,9 @@ class NavBar extends React.Component {
               </Heading>
           </div>
           <div className="row wrap mr-3" id="navLinks">
-            <Link to="/" id="navToBio"><Button animate show={this.props.anim.entered}>Biography</Button></Link>
-            <Link to="/technologies" id="navToTech"><Button animate show={this.props.anim.entered}>Technologies</Button></Link>
-            <Link to="/projects" id="navToProjects"><Button animate show={this.props.anim.entered}>Projects</Button></Link>
+            <Link to="/" id="navToBio"><Button animate show={this.props.anim.entered} onClick={this.props.setShowBio}>Biography</Button></Link>
+            <Link to="/technologies" id="navToTech"><Button animate show={this.props.anim.entered} onClick={this.props.setShowTech}>Technologies</Button></Link>
+            <Link to="/projects" id="navToProjects"><Button animate show={this.props.anim.entered} onClick={this.props.setShowProj}>Projects</Button></Link>
             <Link to="/contact" id="navToProjects"><Button animate show={this.props.anim.entered}>Contact</Button></Link>
           </div>
         </nav>

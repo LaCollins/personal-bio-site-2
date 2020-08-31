@@ -1,6 +1,8 @@
 import './Technologies.scss';
 import React from 'react';
-import { Frame, Heading, Link } from 'arwes';
+import {
+  Frame, Heading, Link, Words,
+} from 'arwes';
 
 class Technologies extends React.Component {
   render() {
@@ -8,11 +10,15 @@ class Technologies extends React.Component {
     <div className="Technologies" style={{ display: 'inline-block', padding: '30px' }}>
       <Frame animate level={3} corners={8} layer='primary' timeout={1000} appear={true}>
       <div className="techContents">
-        <Heading animate>
+        <Heading animate show={this.props.anim.entered}>
           <h2 className="title">Tools &amp; Technologies</h2>
         </Heading>
         <div className="techInfo">
-          <h4>A short overview of the tools and technologies I have experience using.</h4>
+          <h4>
+            <Words animate show={this.props.anim.entered}>
+            A short overview of the tools and technologies I have experience using.
+            </Words>
+          </h4>
           <div className="row" id="techIcons">
             <div className="col-sm-3">
               <Link href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener noreferrer">

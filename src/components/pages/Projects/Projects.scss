@@ -1,18 +1,14 @@
+@import '../../../styles/variables';
+
 .Projects {
   .projectContents {
-    background-color: rgba(0, 0, 0, 0.60);
-    color: rgb(45, 112, 48);
-    border-radius: 2em;
     padding: 1em;
-    border: limegreen dotted 2px;
     padding-left: 2em;
     margin: 1em;
-    box-shadow: 5px 5px 10px rgb(45, 112, 48);
 
     .carouselInfo {
-      background-color: rgba(0, 0, 0, 0.70);
-      border-radius: 1em;
       margin: 10px;
+      background-color: rgba(0, 0, 0, 0.60);
     }
 
     .projectInfo {
@@ -34,14 +30,12 @@
       content: '>';
       font-size: 45px;
       font-weight: bold;
-      color: limegreen;
     }
     
     .carousel-control-prev-icon:after {
       content: '<';
       font-size: 45px;
       font-weight: bold;
-      color: limegreen;
     }
 
     .carousel .carousel-inner {
@@ -51,6 +45,7 @@
       overflow: hidden;
       align-content: center;
     }
+
 
     img {
       height: 100%;
@@ -64,19 +59,19 @@
     }
 
     a:link {
-      color: rgb(0, 255, 115);
+      color: $techBlue;
     }
     
     a:visited {
-      color: rgb(0, 255, 115);
+      color: $techBlue;
     }
     
     a:hover {
-      color: yellowgreen;
+      color: white;
     }
     
     a:active {
-      color: yellow;
+      color: rgb(180, 255, 255);
     }
 
     @media only screen and (max-width: 700px) {
@@ -99,47 +94,10 @@
     }
   }
 
-  @media only screen and (min-width: 800px) {
-    .title2 {
-      display: none;  
-    }
-
-    .title {
-      overflow: hidden;
-      white-space: nowrap;
-      margin: 0 auto;
-      animation:
-        typing 3.5s steps(40, end);
-    }
-    span {
-      overflow: hidden;
-      border-right: .15em solid limegreen;
-      white-space: nowrap;
-      margin: 0 auto;
-      animation:
-        blink-caret .75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: limegreen; }
-    }
-  }
-
   @media only screen and (max-width: 800px) {
-
-    .title2 {
-      display: block;
-    }
-    
-    .title {
+    .description {
       display: none;
     }
-    
   }
+
 }

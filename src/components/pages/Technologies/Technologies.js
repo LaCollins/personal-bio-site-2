@@ -7,8 +7,8 @@ import {
 class Technologies extends React.Component {
   render() {
     return (
-    <div className="Technologies" style={{ display: 'inline-block', padding: '30px' }}>
-      <Frame animate level={3} corners={8} layer='primary' timeout={1000} appear={true}>
+    <div className="Technologies">
+      <Frame animate level={3} corners={8} layer='primary' timeout={1000} appear={true} style={{ marginBottom: '6em' }}>
       <div className="techContents">
         <Heading animate show={this.props.anim.entered}>
           <h2 className="title">Tools &amp; Technologies</h2>

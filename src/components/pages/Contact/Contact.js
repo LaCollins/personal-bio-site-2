@@ -7,8 +7,8 @@ import {
 class Contact extends React.Component {
   render() {
     return (
-      <div className="Contact container" style={{ display: 'inline-block', padding: '30px' }}>
-        <Frame animate level={3} corners={8} layer='primary' show={this.props.anim.entered}>
+      <div className="Contact container">
+        <Frame animate level={3} corners={8} layer='primary' show={this.props.anim.entered} style={{ marginBottom: '5em' }}>
           <div className="contactContents">
           <Heading animate show={this.props.anim.entered}>
             <h2 className="title">Contact</h2>

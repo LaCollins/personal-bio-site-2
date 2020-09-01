@@ -29,7 +29,7 @@ class Projects extends React.Component {
   render() {
     return (
     <div className="Projects container" style={{ display: 'inline-block', padding: '30px' }}>
-      <Frame animate level={3} corners={8} layer='primary' show={this.props.anim.entered}>
+      <Frame animate level={3} corners={8} layer='primary' show={this.props.anim.entered} style={{ marginBottom: '5em' }}>
       <div className="projectContents">
         <Heading animate show={this.props.anim.entered}>
           <h2 className="title">Projects</h2>

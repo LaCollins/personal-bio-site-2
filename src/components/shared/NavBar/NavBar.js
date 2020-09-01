@@ -1,7 +1,7 @@
 import './NavBar.scss';
 import React from 'react';
 import {
-  Button, Header, Heading, Line,
+  Button, Header, Heading, Line, Row,
 } from 'arwes';
 import { Link } from 'react-router-dom';
 
@@ -20,12 +20,12 @@ class NavBar extends React.Component {
                 <h5 className="subtitle text-center">full-stack web developer</h5>
               </Heading>
           </div>
-          <div className="row wrap mr-3" id="navLinks">
+          <Row className="row wrap mr-1" id="navLinks" col s={12}>
             <Link to="/" id="navToBio"><Button animate show={this.props.anim.entered} onClick={this.props.setShowBio}>Biography</Button></Link>
             <Link to="/technologies" id="navToTech"><Button animate show={this.props.anim.entered} onClick={this.props.setShowTech}>Technologies</Button></Link>
             <Link to="/projects" id="navToProjects"><Button animate show={this.props.anim.entered} onClick={this.props.setShowProj}>Projects</Button></Link>
             <Link to="/contact" id="navToProjects"><Button animate show={this.props.anim.entered}>Contact</Button></Link>
-          </div>
+          </Row>
         </nav>
         </Header>
       </div>

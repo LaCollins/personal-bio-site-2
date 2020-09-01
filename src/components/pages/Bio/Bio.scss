@@ -1,6 +1,8 @@
 .Bio {
   
   width: 75%;
+  display: inline-block;
+  padding: 30px;
 
   .bioContents {
     border-radius: 2em;
@@ -40,15 +42,56 @@
 
   
     @media only screen and (max-width: 800px) {
+
+      padding: 0;
+      margin: 5px;
+
       .imgContainer {
         overflow: hidden;
         height: 20em;
         width: 20em;
         border-radius: 50em;
         margin-bottom: 1em;
-        margin: auto;
+        margin-right: 1.5em;
+      }
+
+      .bioContents {
+        margin: 0;
+        padding: 0;
       }
      
     }
+
+    @media only screen and (max-width: 500px) {
+      .imgContainer {
+        height: 10em;
+        width: 10em;
+        border-radius: 5em;
+        margin-right: .5em;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .imgContainer {
+        margin-right: -.5em;
+        margin-bottom: .5em;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .imgContainer {
+        height: 8em;
+        width: 8em;
+        border-radius: 5em;
+        margin-right: .5em;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .imgContainer {
+        display: none;
+      }
+    }
+
   }
 }

@@ -1,4 +1,7 @@
 .Contact {
+  display: inline-block;
+  padding: 30px;
+
   .contactContents {
     padding: 1em;
     padding-left: 2em;
@@ -19,6 +22,17 @@
     .email, .fa-linkedin {
       font-family: 'Share Tech', sans-serif;
       font-size: 2em;
+    }
+
+    @media only screen and (max-width: 800px) {
+
+      padding: 0;
+      margin-top: 10px;
+  
+      .title {
+        font-size: 90%;
+      }
+  
     }
 
   }

@@ -76,6 +76,18 @@
 
     @media only screen and (max-width: 700px) {
 
+      .carousel {
+        margin-left: -.5em;
+        padding: 0;
+        width: 100%;
+        
+        h1 {
+          font-size: 80%;
+        }
+
+        
+      }
+
       .carousel .carousel-inner {
         object-fit: inherit;
         overflow: hidden;
@@ -89,6 +101,15 @@
         .description {
           display: none;
         }
+      }
+
+      .title {
+        font-size: 90%;
+        margin-left: -1em;
+      }
+
+      .projectInfo {
+        margin-left: -1em;
       }
       
     }

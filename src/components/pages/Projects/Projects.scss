@@ -121,4 +121,14 @@
     }
   }
 
+  @media only screen and (max-width: 400px) {
+    .carousel {
+      h1 {
+        font-size: 60% !important;
+        margin-left: -.75em;
+        padding: 5px;
+      }
+    }
+  }
+
 }

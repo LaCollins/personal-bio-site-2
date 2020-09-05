@@ -12,6 +12,7 @@ import './App.scss';
 
 import NavBar from '../components/shared/NavBar/NavBar';
 import Bio from '../components/pages/Bio/Bio';
+import SideProjects from '../components/pages/SideProjects/SideProjects';
 import Projects from '../components/pages/Projects/Projects';
 import Technologies from '../components/pages/Technologies/Technologies';
 import Contact from '../components/pages/Contact/Contact';
@@ -47,29 +48,36 @@ class App extends React.Component {
     showProj: false,
     showTech: false,
     showContact: false,
+    showSideProj: false,
   }
 
   setShowBio = () => {
     this.setState({
-      showBio: true, showProj: false, showTech: false, showContact: false,
+      showBio: true, showProj: false, showTech: false, showContact: false, showSideProj: false,
     });
   }
 
   setShowProj = () => {
     this.setState({
-      showProj: true, showBio: false, showTech: false, showContact: false,
+      showProj: true, showBio: false, showTech: false, showContact: false, showSideProj: false,
     });
   }
 
   setShowTech = () => {
     this.setState({
-      showTech: true, showProj: false, showBio: false, showContact: false,
+      showTech: true, showProj: false, showBio: false, showContact: false, showSideProj: false,
     });
   }
 
   setShowContact = () => {
     this.setState({
-      showContact: true, showProj: false, showTech: false, showBio: false,
+      showContact: true, showProj: false, showTech: false, showBio: false, showSideProj: false,
+    });
+  }
+
+  setShowSideProj = () => {
+    this.setState({
+      showSideProj: true, showContact: false, showProj: false, showTech: false, showBio: false,
     });
   }
 
@@ -81,13 +89,15 @@ class App extends React.Component {
             {(anim) => (
               <div className="App">
                 <Router>
-                <NavBar anim={anim} setShowBio={this.setShowBio} setShowProj={this.setShowProj} setShowTech={this.setShowTech} setShowContact={this.setShowContact} />
+                <NavBar anim={anim} setShowBio={this.setShowBio} setShowProj={this.setShowProj} setShowTech={this.setShowTech} setShowContact={this.setShowContact}
+                setShowSideProj={this.setShowSideProj} />
                   <Switch>
                     <Puffs>
                       <Route path="/" exact render={(props) => <Bio {...props} anim={anim} />}/>
                       <Route path="/projects" exact render={(props) => <Projects {...props} anim={anim}/>} />
                       <Route path="/technologies" exact render={(props) => <Technologies {...props} anim={anim}/>} />
                       <Route path="/contact" exact render={(props) => <Contact {...props} anim={anim}/>} />
+                      <Route path="/sideprojects" exact render={(props) => <SideProjects {...props} anim={anim}/>} />
                     </Puffs>
                   </Switch>
                 <div className="footerContents d-flex row justify-content-between">

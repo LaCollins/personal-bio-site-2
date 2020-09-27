@@ -37,11 +37,11 @@ class SideProjects extends React.Component {
                 <p>
                     <Words animate anim={this.props.anim.entered}>
                         When I am not spending my time working on code, I also keep myself busy with art and music.
-                        Here you can view a gallery of some of my artwork or listen to some of my DJ playlists.
+                        Here you can view a gallery of some of my artwork or listen to some of my playlists.
                     </Words>
                 </p>
-                <Button animate show={this.props.anim.entered} style={{ margin: '10px' }} onClick={this.setShowGallery}>Gallery</Button>
-                <Button animate show={this.props.anim.entered} style={{ margin: '10px' }} onClick={this.setShowDJ}>DJ Playlists</Button>
+                <Button animate show={this.props.anim.entered} style={{ margin: '10px' }} onClick={this.setShowGallery}>Art Gallery</Button>
+                <Button animate show={this.props.anim.entered} style={{ margin: '10px' }} onClick={this.setShowDJ}>Playlists</Button>
                 <Frame animate level={3} corners={8} layer='primary' show={this.state.showFrame} style={{ marginBottom: '5em' }}>
                     {showGallery ? (<Gallery />)
                       : ('') }

@@ -52,5 +52,14 @@
       "available": true,
       "url": "https://www.youtube.com/watch?v=K-NQ_3i7_aA&feature=youtu.be",
       "githubUrl": "https://github.com/LaCollins/TakuGaku"
-      }
+      },
+      "project7": {
+        "title": "Toad Talk",
+        "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-fire-bellied-toads/master/screenshots/toadTalk-load.png",
+        "description": "Toad Talk is a messaging application that allows the user to enter their name and message and add to the page. Additional options include selecting multiple themes, editing or deleting messages, setting dark mode, or adjusting font size. Also, users can include emojis and gifs in their messages!",
+        "technologiesUsed": "HTML5, CSS, Javascript, Bootstrap, jQuery, ES6 modules, Webpack, Giphy API",
+        "available": true,
+        "url": "https://toadtalk-76a1a.web.app/",
+        "githubUrl": "https://github.com/nss-evening-cohort-10/chatty-group-project-fire-bellied-toads"
+        }
 }

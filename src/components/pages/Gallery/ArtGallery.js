@@ -6,7 +6,6 @@ import photos from './images';
 
 
 class ArtGallery extends React.Component {
-
   render() {
     return (
             <div className="ArtGallery">

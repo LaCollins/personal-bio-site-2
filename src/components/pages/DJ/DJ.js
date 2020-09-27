@@ -1,6 +1,6 @@
 import './DJ.scss';
 import React from 'react';
-import { Heading } from 'arwes';
+import { Heading, Words } from 'arwes';
 
 
 class DJ extends React.Component {
@@ -8,8 +8,11 @@ class DJ extends React.Component {
     return (
             <div className="DJ">
                 <Heading>
-                    <h3>DJ</h3>
+                    <h3>Playlists</h3>
                 </Heading>
+                <p>
+                  <Words animate>Coming Soon...</Words>
+                </p>
             </div>
     );
   }

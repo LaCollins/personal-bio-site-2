@@ -1,6 +1,6 @@
 import './DJ.scss';
 import React from 'react';
-import { Heading, Words } from 'arwes';
+import { Heading } from 'arwes';
 
 
 class DJ extends React.Component {
@@ -10,7 +10,7 @@ class DJ extends React.Component {
                 <Heading>
                     <h3>Playlists</h3>
                 </Heading>
-                <div className="d-flex row-wrap justify-content-between">
+                <div className="row-wrap justify-content-between">
                 <iframe title="cyberpunk" src="https://open.spotify.com/embed/playlist/0J807oN5jQ49TO6m8oGhe7"
                 className="m-2" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe title="industrial" src="https://open.spotify.com/embed/playlist/6CsI3RshTXhUjUFTeYG88F"

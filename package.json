@@ -10,7 +10,7 @@
     "arwes": "^1.0.0-alpha.5",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "firebase": "^7.21.1",
+    "firebase": "^7.23.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

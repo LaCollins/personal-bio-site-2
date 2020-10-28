@@ -1,5 +1,5 @@
 import './ArtGallery.scss';
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { Heading } from 'arwes';
 import Gallery from 'react-photo-gallery';
 import photos from './images';

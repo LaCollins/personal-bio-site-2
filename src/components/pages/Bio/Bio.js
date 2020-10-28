@@ -34,15 +34,10 @@ class Bio extends React.Component {
               </div>
             </Appear>
             <div className="col">
-              <div className="m-auto bioText text-justify">
+              <div className="bioText text-justify">
                 <p>
                   <Words animate show={this.props.anim.entered}>
                   Born on a farm in the middle of nowhere, Wisconsin, I spent the majority of my youth splitting my attention between the great outdoors, art, and computers. I wrote my first program, a simple text based adventure game, in Basic at the tender age of eight. It sparked a love for programming within me that never went away. In middle school I picked up HTML and built a multitude of websites on Geocities and by high school I was learning Visual Basic and C++.
-                  </Words>
-                </p>
-                <p>
-                  <Words animate show={this.props.anim.entered}>
-                  For whatever reason, I decided to set coding aside and persue art and Japanese langauge in college. I graduated from the University of Minnesota with a degree in Japanese Language and Literature right at the start of the second major economic crash of the early 2000's. As a result, work within my field was scarce and I ended up working a variety of unfulfilling jobs to pay the bills.
                   </Words>
                 </p>
                 <p>

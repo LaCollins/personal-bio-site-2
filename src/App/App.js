@@ -100,10 +100,12 @@ class App extends React.Component {
                       <Route path="/sideprojects" exact render={(props) => <SideProjects {...props} anim={anim}/>} />
                     </Puffs>
                   </Switch>
+                <div className="footer">
                 <div className="footerContents d-flex row justify-content-between">
                   <Line animate show={anim.entered}/>
                   <div>© Laura E. Collins</div>
                   <Link animate show={anim.entered} href="https://github.com/arwesjs/arwes" alt="Arwes theme">Arwes API by Romel Pérez</Link>
+                </div>
                 </div>
                 </Router>
             </div>

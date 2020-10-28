@@ -39,8 +39,12 @@
   color: #61dafb;
 }
 
+.footerContents {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  .footerContents {
+  .footer {
     display: none;
   }
 }

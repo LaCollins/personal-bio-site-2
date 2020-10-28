@@ -3,9 +3,15 @@
     display: inline-block;
     padding: 10px;
 
+    img {
+        opacity: 0.5;
+    }
+
     img:hover {
         transform: scale(1.2);
         box-shadow: 0px 0 10px $techBlue;
+        z-index: 100000;
+        opacity: 1;
     }
 
     @media only screen and (max-width: 600px) {

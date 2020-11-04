@@ -61,5 +61,14 @@
         "available": true,
         "url": "https://toadtalk-76a1a.web.app/",
         "githubUrl": "https://github.com/nss-evening-cohort-10/chatty-group-project-fire-bellied-toads"
-        }
+        },
+        "project8": {
+          "title": "Tandem Trivia",
+          "screenshot": "https://raw.githubusercontent.com/LaCollins/tandemtrivia/master/screenshots/questionView.PNG",
+          "description": "Tandem Trivia was built as part of Tandem's code challenge for their apprenticeship program. The challenge was to build a trivia game that was playable in a 10 question round, randomized the questions, and tracked the user's score.",
+          "technologiesUsed": "React, HTML5, CSS, Javascript, Bootstrap, Webpack",
+          "available": true,
+          "url": "https://tandem-trivia.web.app/",
+          "githubUrl": "https://github.com/LaCollins/tandemtrivia"
+          }
 }

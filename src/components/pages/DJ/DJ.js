@@ -1,6 +1,6 @@
 import './DJ.scss';
 import React from 'react';
-import { Heading } from 'arwes';
+import { Heading, Words } from 'arwes';
 
 
 class DJ extends React.Component {
@@ -8,7 +8,53 @@ class DJ extends React.Component {
     return (
             <div className="DJ">
                 <Heading>
-                    <h3>Playlists</h3>
+                    <h3>Music</h3>
+                </Heading>
+                <Heading>
+                    <h4>My Compositions</h4>
+                </Heading>
+                <Words animate className="mt-3">
+                  Simple Peace
+                </Words>
+                  <iframe title="simple peace"
+                  width="100%"
+                  height="300"
+                  scrolling="no"
+                  frameborder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80201403&color=%2300bfff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                  </iframe>
+                  <div className="soundCloudTantalizer"><a href="https://soundcloud.com/cube_of_squish"
+                  title="Laura Collins"
+                  target="_blank" rel="noopener noreferrer" className="tantalizerLink">Laura Collins</a> · <a href="https://soundcloud.com/cube_of_squish/cube-of-squish-simple-peace" title="Cube of Squish- Simple Peace" rel="noopener noreferrer" className="tantalizerLink">Cube of Squish- Simple Peace</a></div>
+                <Words animate className="mt-3">
+                  Tantalizer
+                </Words>
+                  <iframe title="Tantalizer"
+                  width="100%" height="300"
+                  scrolling="no" frameborder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/79340282&color=%2300bfff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                  </iframe>
+                  <div className="soundCloudTantalizer"><a href="https://soundcloud.com/cube_of_squish"
+                  title="Laura Collins"
+                  target="_blank" rel="noopener noreferrer" className="tantalizerLink">Laura Collins</a> · <a href="https://soundcloud.com/cube_of_squish/cube-of-squish-tantalizer" title="Cube of Squish - Tantalizer" target="_blank" rel="noopener noreferrer" className="tantalizerLink">Cube of Squish - Tantalizer</a></div>
+                <Words animate className="mt-3">
+                  Man is to Blame
+                </Words>
+                  <iframe title="Man is to Blame"
+                  width="100%"
+                  height="300"
+                  scrolling="no"
+                  frameborder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80130419&color=%2300bfff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                  </iframe>
+                  <div className="soundCloudTantalizer"><a href="https://soundcloud.com/cube_of_squish"
+                  title="Laura Collins"
+                  target="_blank" rel="noopener noreferrer" className="tantalizerLink">Laura Collins</a> · <a href="https://soundcloud.com/cube_of_squish/cube-of-squish-man-is-to-blame" title="Cube of Squish - Man Is To Blame" target="_blank" rel="noopener noreferrer" className="tantalizerLink">Cube of Squish - Man Is To Blame</a></div>
+                <Heading className="mt-5">
+                    <h4>Spotify Playlists</h4>
                 </Heading>
                 <div className="row-wrap justify-content-between">
                 <iframe title="cyberpunk" src="https://open.spotify.com/embed/playlist/0J807oN5jQ49TO6m8oGhe7"
